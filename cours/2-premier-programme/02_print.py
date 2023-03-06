@@ -30,5 +30,8 @@ Ligne 2
 """
 Exercice : Afficher le texte suivant.
 5-6$$$
-7
+7$$$
+8
 """
+print("5-6$$$\n7")
+print("5-6", "7", sep="$$$\n")
