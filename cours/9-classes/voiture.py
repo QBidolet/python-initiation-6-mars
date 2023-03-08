@@ -15,10 +15,3 @@ class Voiture:
 
     def __eq__(self, other):
         return self.marque == other.marque
-
-
-
-ma_voiture = Voiture("Blanche", "Tesla")
-ma_voiture_2 = Voiture("Noir", "Tesla")
-print(ma_voiture == ma_voiture_2)
-

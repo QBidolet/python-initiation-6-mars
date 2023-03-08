@@ -10,7 +10,3 @@ class VoitureDeCourse(Voiture):
         return f"Je suis une voiture de course {self.marque}" \
                f" de couleur {self.couleur}" \
                f" et de vitesse {self.vitesse}."
-
-
-tesla = VoitureDeCourse("Blanche", "Tesla", "300")
-print(tesla)
