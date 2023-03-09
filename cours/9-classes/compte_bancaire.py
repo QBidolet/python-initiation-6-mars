@@ -9,4 +9,19 @@ Trois autres méthodes seront définies :
 """
 
 class CompteBancaire:
-    pass
+    def __init__(self, nom="Dupont", solde=1000):
+        self.nom = nom
+        self.solde = solde
+
+    def deposer(self, somme):
+        if somme > 0:
+            self.solde += somme
+
+    def retrait(self, somme):
+        if self.solde >= somme:
+            self.solde -= somme
+
+    def __str__(self):
+        # return f"nom: {self.nom}\nsolde: {self.solde}"
+        return "nom: " + self.nom + "\nsolde: " + str(self.solde)
+
